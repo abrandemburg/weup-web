@@ -1,0 +1,26 @@
+//- includes/head.pug
+
+header.l-header
+    - const navClasses=["nav", "bd-grid"]
+    nav(class=navClasses)
+        div
+            a.nav__logo(href="#") Coffee
+        
+        div#nav-toggle.nav__toggle
+            - const iMenu=["bx", "bx-menu"]
+            i(class=iMenu)
+
+        div#nav-menu.nav__menu
+            div#nav-close.nav__close
+            - const iClose=["bx", "bx-x"]
+                i(class=iClose)
+            
+            ul.nav__list
+                li.nav__item
+                    a.nav__link(href="#") Home
+                li.nav__item
+                    a.nav__link(href="#") About Us
+                li.nav__item
+                    a.nav__link(href="#") Services
+                li.nav__item
+                    a.nav__link(href="#") Contato

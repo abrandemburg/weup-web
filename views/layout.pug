@@ -2,6 +2,24 @@ doctype html
 html
   head
     title= title
+
+    // css
     link(rel='stylesheet', href='/stylesheets/style.css')
+
+    // boxicons
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    // bootstrap
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+
+
   body
-    block content
+
+    // HEADER
+    include includes/header.pug
+    
+    //js
+    script(href="/javascripts/main.js")
+
+    //gsap
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js")
